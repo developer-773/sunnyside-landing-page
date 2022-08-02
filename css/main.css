@@ -201,7 +201,7 @@ ul{
 .hero{
     padding: 22px 0 296px 0;
     background-image: url("../images/orange.jpg");
-    background-size: contain;
+    background-size: cover;
     background-color: #49bcf2;
     background-repeat: no-repeat;
     background-position: calc(50%) calc(50% - 0px);
@@ -472,6 +472,7 @@ ul{
     
     .hero{
         padding-bottom: 380px;
+        background-size: contain;
     }
     
     .hero__wrap{
