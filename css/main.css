@@ -422,14 +422,7 @@ ul{
         line-height: 69px;
     }
     
-    
-    .cards__item{
-        flex-direction: row;
-    }
-    
-    .cards__list{
-        display: flex;
-    }
+
     
     
 }
@@ -451,6 +444,15 @@ ul{
     .logo__img{
         width: 173px;
         height: 33px;
+    }
+
+        
+    .cards__item{
+        flex-direction: row;
+    }
+    
+    .cards__list{
+        display: flex;
     }
     
     .cards__img-mobile{
