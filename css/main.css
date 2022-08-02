@@ -1,0 +1,564 @@
+@font-face {
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/fraunces-9pt-soft-black.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/fraunces-9pt-soft-black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/barlow-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/barlow-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* GENERAL */
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+html{
+    height: 100%;
+    
+}
+
+img{
+    display: block;
+    height: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    max-width: 1382px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* STICKY-FOOTER */
+.site-main{
+    flex-grow: 1;
+}
+
+.site-header{
+    padding: 32px 4px;
+    background-color: #49bcf2;
+}
+
+.site-header__inner{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.sitenav__btn{
+    display: none;
+    padding: 16px 32px;
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.107143px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    background-color: #b3cbfffa;
+    border-radius: 28px;
+    text-decoration: none;
+}
+
+.sitenav__list{
+    position: fixed;
+    z-index: 11;
+    top: 89px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 327px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 94px;
+    background-color: #fff;
+}
+
+.sitenav__list-on {
+    display: flex;
+}
+
+.sitenav__span{
+    position: absolute;
+    top: -18px;
+    right: 0;
+    right: 0;
+    /* display: none; */
+    width: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    border-top: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid transparent;
+}
+
+.navbar__btn{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    width: 100%;
+    max-width: 170px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    padding: 16px 32px;
+    font-family: "Fraunces 9pt Soft";
+    text-align: center;
+    color: #24303E;
+    ;
+    background-color: #FBD600;
+    ;
+    text-decoration: none;
+    border-radius: 28px;
+}
+
+.sitenav__item{
+    margin-bottom: 32px;
+}
+
+.sitenav__link{
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+    color:#808397;
+    
+    text-decoration: none;
+}
+
+
+
+.site-header__menu-btn{
+    /* display: none; */
+    width: 24px;
+    height: 18px;
+    background-image: url("../images/mobile-images/hamburger.svg");
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.hero{
+    padding: 22px 0 296px 0;
+    background-image: url("../images/orange.jpg");
+    background-size: cover;
+    background-color: #49bcf2;
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(50% - 0px);
+}
+
+
+.hero__wrap{
+    position: relative;
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+}
+
+.hero__wrap::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 50px;
+    height: 139px;
+    margin: 0 auto;
+    background-image: url("../images/Group.svg");
+    background-repeat: no-repeat;
+    content: " ";
+    
+}
+
+.hero__title{
+    font-family: 'Fraunces 9pt Soft';
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cards__img-desktop{
+    display: none;
+}
+
+.cards__item{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cards__txt{
+    padding: 0 24px;
+}
+
+.cards__title{
+    font-family: 'Fraunces 9pt Soft';
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.228571px;
+    color: #24303E;
+}
+
+
+
+.cards__desc{
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #808397;
+    
+}
+
+.cards__link{
+    display: block;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 64px;
+    font-family: 'Fraunces 9pt Soft';
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24303E;
+    text-decoration: none;
+}
+
+.cards__item{
+    position: relative;
+}
+
+.cards__img-mobile{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.cards__img-tablet{
+    display: none;
+}
+
+.cards__item--active:nth-child(1){
+    width: 100%;
+    max-width: 363px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 332px;
+    background-image: url("../images/mobile-images/cherry-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards__item--active:nth-child(2){
+    width: 100%;
+    max-width: 363px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+    padding-top: 332px;
+    background-image: url("../images/mobile-images/mandarin-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@media only screen and (min-width: 320px){
+    .cards__img-mobile{
+        width: 320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .cards__txt{
+        width: 100%;
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 450px){
+    .cards__item--active:nth-child(1),
+    .cards__item--active:nth-child(2){
+        max-width: 400px;
+        padding-top: 371px;
+    }
+}
+
+@media only screen and (min-width: 786px){
+
+    .cards__img-mobile{
+        display: none;
+    }
+
+    .cards__img-desktop{
+        display: block;
+    }
+    
+    .site-header__menu-btn{
+        display: none;
+    }
+    
+    .sitenav{
+        display: block;
+    }
+    
+    
+    .sitenav__list{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        background-color: transparent;  
+        padding: 0;
+    }
+
+    .sitenav__item{
+        margin-bottom: 0;
+    }
+
+    .navbar__btn,
+    .sitenav__span{
+        display: none;
+    }
+    
+    .sitenav__btn{
+        display: inline-block;
+
+    }
+
+    .sitenav__item{
+        margin-right: 47px;
+    }
+    
+    .sitenav__link{
+        font-family: 'Barlow';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.128571px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .hero__wrap{
+        width: 100%;
+        max-width: 380px;
+    }
+    
+    .hero__title{
+        font-family: "Fraunces 9pt Soft";
+        font-size: 56px;
+        line-height: 69px;
+    }
+    
+    
+    .cards__item{
+        flex-direction: row;
+    }
+    
+    .cards__list{
+        display: flex;
+    }
+    
+    
+}
+
+
+@media only screen and (min-width: 1150px){
+    .cards__item--active:nth-child(1), .cards__item--active:nth-child(2) {
+        max-width: 511px;
+        padding-top: 447px;
+    }
+    
+    .sitenav__btn{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1344px){
+    
+    .logo__img{
+        width: 173px;
+        height: 33px;
+    }
+    
+    .cards__img-mobile{
+        display: none;
+    }
+    
+    .cards__img-desktop{
+        display: block;
+    }
+    
+    .sitenav__btn{
+        transition: all 0.3s ease;
+    }
+    
+    .sitenav__btn:hover{
+        color: #000;
+        background-color: #fff;
+    }
+    
+    .hero{
+        padding-bottom: 380px;
+    }
+    
+    .hero__wrap{
+        max-width: 769px;
+    }
+    
+    .hero__wrap::after{
+        top: 160px;
+    }
+    
+    .hero__title{
+        font-family: 'Fraunces 9pt Soft';
+        font-size: 56px;
+        line-height: 69px;
+        text-align: center;
+        letter-spacing: 8.75px;
+    }
+    
+    .cards__main{
+        width: 1454px;
+        margin: 0 auto; 
+    }
+    
+    .cards__item:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    
+    .cards__item--active:nth-child(1){
+        max-width: 720px;
+        margin-left: 0;
+        margin: 0;
+        padding-top: 171px;
+        background-image: url("../images/cherry.jpg");
+        background-size: 720px 600px;
+    }
+    .cards__item--active:nth-child(2){
+        max-width: 720px;
+        margin: 0;
+        padding-top: 171px;
+        background-image: url("../images/mandarin.jpg");
+        background-size: 720px 600px;
+    }
+    
+    .cards__box{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .center{
+        text-align: center;
+    }
+    
+    .cards__img{
+        width: 50%;
+    }
+
+    
+    
+    
+    .cards__txt{
+        width: 445px;
+    }
+    
+    .cards__title{
+        padding-top: 158px;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: left;
+    }
+    
+    .cards__desc{
+        text-align: left;
+    }
+    
+    .cards__link{
+        margin-left: 0;
+        border-bottom: 3px solid #ffffff;
+        ;
+        transition: all 0.3s ease;
+    }
+    
+    .cards__link:hover{
+        /* width: 23px; */
+        border-bottom: 13px solid #f8eeb3;
+        border-radius: 5px;
+        ;
+    }
+}
+
+
