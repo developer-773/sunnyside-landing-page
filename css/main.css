@@ -370,7 +370,7 @@ ul{
     .testimonials__img{
         margin-bottom: 32px;    
     }
-
+    
     .foods__box{
         display: grid;
         grid-template-columns: auto auto;
@@ -431,7 +431,7 @@ ul{
         background-color: #90D4C6;
         
     }
-
+    
     .footer__box{
         display: flex;
         flex-direction: column;
@@ -501,21 +501,21 @@ ul{
 
 @media only screen and (min-width: 665px){
     .foods__box{
-        display: flex;
-        flex-wrap: wrap;
-        width: 720px;
-        margin: 0 auto; 
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 602px;
+        margin: 0; 
     }
     
     .foods__item{
         width: auto;
         height: 447px;
     }
-
+    
     .foods__img-mobi{
         display: none;
     }
-
+    
     .foods__img-desk{
         display: block;
     }
@@ -599,23 +599,23 @@ ul{
         margin-right: auto;
         margin-left: auto;
     }
-
+    
     
     .foods__box{
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto;
     }
-
+    
     .foods__img-mobi{
         display: none;
     }
-
+    
     .foods__img-desk{
         display: block;
         width: 100%;
         min-width: 195px;
     }
-
+    
     .footer__logo{
         width: 170px;
         height: 33px;
@@ -633,7 +633,7 @@ ul{
     .sitenav__btn{
         display: block;
     }
-
+    
 }
 
 
@@ -761,7 +761,7 @@ ul{
         border-radius: 5px;
         ;
     }
-
+    
     .cards__item:nth-child(2) .cards__link:hover{
         /* width: 23px; */
         border-bottom: 13px solid #fe7666;
@@ -796,36 +796,36 @@ ul{
     .testimonials__desc{
         margin-bottom: 69px;
     }
-
+    
     .footer__link{
         transition: all 0.3s ease;
     }
-
+    
     .footer__link:hover{
         color: #fff;
     }
-
+    
     .footer__icon-link{
         color: #2C7566;
         ;
         transition: all 0.3s ease;
     }
-
+    
     .footer__icon-link:hover{
         color: #fff;
     }
-
+    
     .foods__box{
         width: 100%;
         margin: 0;
     }
-
+    
     /* .foods__img-desk{
         width: 100%;
     }
- */
-
-
-
+    */
+    
+    
+    
 }
 
