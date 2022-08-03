@@ -33,7 +33,7 @@ html{
 
 img{
     display: block;
-    height: auto;
+    /* height: auto; */
 }
 
 body{
@@ -308,7 +308,7 @@ ul{
 
 .cards__item--active:nth-child(1){
     width: 100%;
-    max-width: 363px;
+    min-width: 320px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 332px;
@@ -319,7 +319,7 @@ ul{
 
 .cards__item--active:nth-child(2){
     width: 100%;
-    max-width: 363px;
+    min-width: 320px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
@@ -331,8 +331,10 @@ ul{
 }
 
 @media only screen and (min-width: 320px){
+    
+    
     .cards__img-mobile{
-        width: 320px;
+        width: 309px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -344,25 +346,191 @@ ul{
         margin-left: auto;
     }
     
+    .testimonials{
+        padding-top: 64px;
+    }
+    
+    .testimonials__item{
+        width: 100%;
+        min-width: 308px;
+        margin-bottom: 64px;
+    }
+    
+    .testimonials__title{
+        margin-bottom: 64px;
+        font-family: 'Fraunces 9pt Soft';
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 4px;
+        color: #A7AAAD;
+    }
+    
+    .testimonials__img{
+        margin-bottom: 32px;    
+    }
+
+    .foods__box{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .foods__img-desk{
+        display: none;
+    }
+    
+    .foods__img-mobi{
+        width: 100%;
+        min-width: 168px;
+    }
+    
+    
+    .testimonials__desc{
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-family: 'Barlow';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -0.128571px;
+        color: #5B636D;
+    }
+    
+    .testimonials__heading{
+        margin-bottom: 9px;
+        font-family: 'Fraunces 9pt Soft';
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.128571px;
+        color: #24303E;
+    }
+    
+    .testimonials__small{
+        font-family: 'Barlow';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 25px;   
+        text-align: center;
+        letter-spacing: -0.1px; 
+        color: #A7AAAD;
+    }
+    
+    .testimonials__img,
+    .testimonials__small{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .footer{
+        padding: 64px 39px 80px 39px;
+        background-color: #90D4C6;
+        
+    }
+
+    .footer__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer__logo{
+        margin-bottom: 40px;
+        color: #2C7566;
+    }
+    
+    .footer__nav{
+        display: flex;
+        margin-bottom: 88px;
+    }
+    
+    .footer__item:not(:last-child){
+        margin-right: 31px;
+    }
+    
+    .footer__link{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.128571px;
+        color: #458D7E;
+        text-decoration: none;
+    }
+    
+    .footer__list{
+        display: flex;
+    }
+    
+    .footer__icon:not(:last-child){
+        margin-right: 28px;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 375px){
+    .hero__title{
+        font-size: 40px;
+        line-height: 49px;
+    }
+    
+    .cards__item--active:nth-child(1),
+    .cards__item--active:nth-child(2){
+        padding-bottom: 40px;
+    }
+    
+    
+    
     
 }
 
 @media only screen and (min-width: 450px){
     .cards__item--active:nth-child(1),
     .cards__item--active:nth-child(2){
-        max-width: 400px;
+        /* max-width: 400px; */
         padding-top: 371px;
     }
 }
 
-@media only screen and (min-width: 786px){
 
-    .cards__img-mobile{
+@media only screen and (min-width: 665px){
+    .foods__box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 720px;
+        margin: 0 auto; 
+    }
+    
+    .foods__item{
+        width: auto;
+        height: 447px;
+    }
+
+    .foods__img-mobi{
         display: none;
     }
 
+    .foods__img-desk{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 786px){
+    
+    .cards__img-mobile{
+        display: none;
+    }
+    
     .cards__img-desktop{
         display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     .site-header__menu-btn{
@@ -382,11 +550,11 @@ ul{
         background-color: transparent;  
         padding: 0;
     }
-
+    
     .sitenav__item{
         margin-bottom: 0;
     }
-
+    
     .navbar__btn,
     .sitenav__span{
         display: none;
@@ -394,9 +562,9 @@ ul{
     
     .sitenav__btn{
         display: inline-block;
-
+        
     }
-
+    
     .sitenav__item{
         margin-right: 47px;
     }
@@ -410,7 +578,7 @@ ul{
         color: #FFFFFF;
         text-decoration: none;
     }
-
+    
     .hero__wrap{
         width: 100%;
         max-width: 380px;
@@ -422,8 +590,36 @@ ul{
         line-height: 69px;
     }
     
+    .cards__txt{
+        max-width: 555px;
+    }
+    
+    .testimonials__item{
+        max-width: 555px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
     
+    .foods__box{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .foods__img-mobi{
+        display: none;
+    }
+
+    .foods__img-desk{
+        display: block;
+        width: 100%;
+        min-width: 195px;
+    }
+
+    .footer__logo{
+        width: 170px;
+        height: 33px;
+    }
     
 }
 
@@ -437,16 +633,18 @@ ul{
     .sitenav__btn{
         display: block;
     }
+
 }
 
-@media only screen and (min-width: 1344px){
+
+@media only screen and (min-width: 1366px){
     
     .logo__img{
         width: 173px;
         height: 33px;
     }
-
-        
+    
+    
     .cards__item{
         flex-direction: row;
     }
@@ -493,9 +691,12 @@ ul{
         letter-spacing: 8.75px;
     }
     
-    .cards__main{
-        width: 1454px;
-        margin: 0 auto; 
+    .cards__img{
+        width: 50%;
+    }
+    
+    .cards__img-desktop{
+        width: 100%;
     }
     
     .cards__item:nth-child(2){
@@ -503,19 +704,23 @@ ul{
     }
     
     .cards__item--active:nth-child(1){
-        max-width: 720px;
+        /* max-width: 720px; */
+        width: 100%;
+        max-width: none;
         margin-left: 0;
         margin: 0;
         padding-top: 171px;
         background-image: url("../images/cherry.jpg");
-        background-size: 720px 600px;
+        /* background-size: 720px 600px; */
     }
     .cards__item--active:nth-child(2){
-        max-width: 720px;
+        /* max-width: 720px; */
+        width: 100%;
+        max-width: none;
         margin: 0;
         padding-top: 171px;
         background-image: url("../images/mandarin.jpg");
-        background-size: 720px 600px;
+        /* background-size: 720px 600px; */
     }
     
     .cards__box{
@@ -527,15 +732,9 @@ ul{
         text-align: center;
     }
     
-    .cards__img{
-        width: 50%;
-    }
-
-    
-    
     
     .cards__txt{
-        width: 445px;
+        width: 420px;
     }
     
     .cards__title{
@@ -556,12 +755,77 @@ ul{
         transition: all 0.3s ease;
     }
     
-    .cards__link:hover{
+    .cards__item:nth-child(1) .cards__link:hover{
         /* width: 23px; */
-        border-bottom: 13px solid #f8eeb3;
+        border-bottom: 13px solid #ffdd1b;
         border-radius: 5px;
         ;
     }
-}
 
+    .cards__item:nth-child(2) .cards__link:hover{
+        /* width: 23px; */
+        border-bottom: 13px solid #fe7666;
+        border-radius: 5px;
+        ;
+    }
+    
+    .testimonials{
+        padding: 160px 0;
+    }
+    
+    .testimonials__list{
+        display: flex;
+    }
+    
+    .testimonials__item:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    .testimonials__item{
+        max-width: 350px;
+    }
+    
+    .testimonials__title{
+        margin-bottom: 81px;
+    }
+    
+    .testimonials__img{
+        margin-bottom: 58px;
+    }
+    
+    .testimonials__desc{
+        margin-bottom: 69px;
+    }
+
+    .footer__link{
+        transition: all 0.3s ease;
+    }
+
+    .footer__link:hover{
+        color: #fff;
+    }
+
+    .footer__icon-link{
+        color: #2C7566;
+        ;
+        transition: all 0.3s ease;
+    }
+
+    .footer__icon-link:hover{
+        color: #fff;
+    }
+
+    .foods__box{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* .foods__img-desk{
+        width: 100%;
+    }
+ */
+
+
+
+}
 
