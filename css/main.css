@@ -604,6 +604,9 @@ ul{
     .foods__box{
         display: grid;
         grid-template-columns: auto auto;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
     
     .foods__img-mobi{
@@ -795,6 +798,11 @@ ul{
     
     .testimonials__desc{
         margin-bottom: 69px;
+    }
+
+    .foods__box{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
     }
     
     .footer__link{
